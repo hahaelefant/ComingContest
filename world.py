@@ -1,3 +1,4 @@
+import copy
 import csv, os
 from collections import Counter
 from itertools import combinations, combinations_with_replacement, permutations
@@ -9,10 +10,11 @@ INPUT_DIR = os.getcwd() + "\\input\\level{0}".format(LEVEL)
 OUTPUT_DIR = os.getcwd() + "\\output\\level{0}".format(LEVEL)
 
 def cheese_solution(coins, amounts):
+    complete_sol = []
     N = 2
     max_coin = max(coins)
     optimal_solutions = dict()
-    for target in range(1, N*max_coin):
+    for target in range(1, N*max_coin+2):
         temp_target = target
         # add logic here
         coins_for_target = {}
@@ -37,13 +39,13 @@ def cheese_solution(coins, amounts):
     for amount in amounts:
         how_often = ceil((amount-N*max_coin)/max_coin)
         temp_amount = amount - how_often * max_coin
-        tmp_solution = optimal_solutions[temp_amount]
+        tmp_solution = copy.deepcopy(optimal_solutions[temp_amount])
         if max_coin in tmp_solution:
             tmp_solution[max_coin] += how_often
         else:
             tmp_solution[max_coin] = how_often
-        # results.append(tmp_solution)
-        return tmp_solution
+        complete_sol.append(tmp_solution)
+    return complete_sol
 
 
 listOfFiles = list()
@@ -70,9 +72,9 @@ for filename in listOfFiles:
             coins = [int(x) for x in row]
             row = next(csv_reader)
             amounts = [int(x) for x in row]
-            # thomas coide
-            # results.append(cheese_solution(coins, amounts))
-            # continue
+            # thomas code
+            results += cheese_solution(coins, amounts)
+            continue
 
             # lukas code
             optimal_solution = {}
@@ -100,5 +102,5 @@ for filename in listOfFiles:
     with open(os.path.join(OUTPUT_DIR, "level{}-{}.out".format(LEVEL, filename[-4])), 'w+') as f:
         for result in results:
             # print(result)
-            f.write(" ".join(["{}x{}".format(b,a) for a,b in result]) + "\n")
+            f.write(" ".join(["{}x{}".format(b,a) for a,b in result.items()]) + "\n")
 

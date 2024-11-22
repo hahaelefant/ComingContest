@@ -5,15 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4df470c-86ef-4013-aca7-b705d2dc0ad8" name="Changes" comment="level 1">
+      <change beforePath="$PROJECT_DIR$/.idea/ComingContest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ComingContest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <list id="66cf03dc-3221-4870-8165-bc1d30f7a640" name="Changes by thoma" comment="">
+      <change beforePath="$PROJECT_DIR$/output/level4/level4-1.out" beforeDir="false" afterPath="$PROJECT_DIR$/output/level4/level4-1.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/level4/level4-2.out" beforeDir="false" afterPath="$PROJECT_DIR$/output/level4/level4-2.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/level4/level4-3.out" beforeDir="false" afterPath="$PROJECT_DIR$/output/level4/level4-3.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/level4/level4-4.out" beforeDir="false" afterPath="$PROJECT_DIR$/output/level4/level4-4.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/level4/level4-5.out" beforeDir="false" afterPath="$PROJECT_DIR$/output/level4/level4-5.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output/level4/level4-e.out" beforeDir="false" afterPath="$PROJECT_DIR$/output/level4/level4-e.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/world.py" beforeDir="false" afterPath="$PROJECT_DIR$/world.py" afterDir="false" />
     </list>
+    <list id="66cf03dc-3221-4870-8165-bc1d30f7a640" name="Changes by thoma" comment="" />
     <list id="f6bdb1c6-176b-4939-961d-aff7891e0be9" name="Changes by Thomas" comment="" />
-    <list id="90563cf8-7e2a-43c4-8d62-2f343e613446" name="Changes by wiiin" comment="">
-      <change beforePath="$PROJECT_DIR$/world.py" beforeDir="false" afterPath="$PROJECT_DIR$/world.py" afterDir="false" />
-    </list>
+    <list id="90563cf8-7e2a-43c4-8d62-2f343e613446" name="Changes by wiiin" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -26,24 +31,13 @@
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/world.py">
-      <ranges>
-        <range start1="1" end1="1" start2="1" end2="4" changelist="66cf03dc-3221-4870-8165-bc1d30f7a640" />
-        <range start1="3" end1="4" start2="6" end2="7" changelist="66cf03dc-3221-4870-8165-bc1d30f7a640" />
-        <range start1="6" end1="6" start2="9" end2="46" changelist="66cf03dc-3221-4870-8165-bc1d30f7a640" />
-        <range start1="11" end1="11" start2="51" end2="54" changelist="90563cf8-7e2a-43c4-8d62-2f343e613446" />
-        <range start1="13" end1="13" start2="56" end2="58" changelist="66cf03dc-3221-4870-8165-bc1d30f7a640" />
-        <range start1="25" end1="33" start2="70" end2="98" changelist="66cf03dc-3221-4870-8165-bc1d30f7a640" />
-        <range start1="36" end1="46" start2="101" end2="103" changelist="90563cf8-7e2a-43c4-8d62-2f343e613446" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
   <component name="ProjectId" id="2pDEQ6xTJkCyzMsL6GkRyLTw6JD" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -163,22 +157,23 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/main.py</url>
-          <line>6</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <condition expression="filename.endswith(&quot;e.in&quot;) and target == 12" />
           <url>file://$PROJECT_DIR$/world.py</url>
-          <line>92</line>
+          <line>93</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="python-line">
           <condition expression="optimal_solution == None" />
           <url>file://$PROJECT_DIR$/world.py</url>
-          <line>97</line>
+          <line>98</line>
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <condition expression="amount == 77775" language="Python" />
+          <url>file://$PROJECT_DIR$/world.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
