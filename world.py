@@ -23,12 +23,18 @@ for filename in listOfFiles:
         for _ in range(n_currencies):
             row = next(csv_reader)
             coins = [int(x) for x in row]
+            amounts = next(csv_reader)
             # min amount not creatable with one coin
-            results.append(min([x for x in range(1, max(coins)+2) if x not in coins]))
+            for amount in amounts:
+                for coin in coins:
+                    diff = int(amount) - coin
+                    if diff in coins:
+                        results.append([str(coin), str(diff)])
+                        break
 
     with open(os.path.join(OUTPUT_DIR, "level{}-{}.out".format(LEVEL, filename[-4])), 'w+') as f:
         for result in results:
-            f.write(str(result) + "\n")
+            f.write(" ".join(result) + "\n")
             print(result)
 
 def get_smallest_amount_not_single_coin(coins: List[int]):
